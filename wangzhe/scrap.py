@@ -8,6 +8,7 @@ response = requests.get("http://pvp.qq.com/web201605/js/herolist.json")
 hero_json = json.loads(response.text)
 hero_num = len(hero_json)
 
+//save_dir的路径请自己定义
 save_dir = 'C:\Users\\asus\Desktop\wangzhe\skins\\'
 if not os.path.exists(save_dir):
 	os.mkdir(save_dir)

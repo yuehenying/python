@@ -1,0 +1,1 @@
+这个demo是参照mooc网的课程一步步做下来的，使用了scrapy框架，Mongodb数据库

@@ -18,6 +18,7 @@ class DoubanPipeline(object):
         self.post = mydb[sheetname]
 
     def process_item(self, item, spider):
+        #这里有点问题，虽然导出到csv或json文件中都正确但存储到Mongodb数据库中时却只有50条数据
         data = dict(item)
         self.post.insert(data)
         return item

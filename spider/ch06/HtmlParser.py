@@ -23,7 +23,7 @@ class HtmlParser(object):
         抽取新的url集合
         :param page_url: 下载页面的url
         :param soup: soup
-        :return: 返回新的url集合
+        :return: 返回新url集合
         '''
         new_urls = set()
         #抽取符合要求的a标签
